@@ -10,8 +10,16 @@ const TodoItem: React.FC<{
     props.removeTodo(props.item.id);
   };
   return (
-    <li onClick={deleteTodo} className={classes.todoItem}>
-      {props.item.text}
+    <li className={classes.todoItem}>
+      <span>{props.item.text}</span>
+      <span>
+        <img
+          className={classes.closeButton}
+          src="/images/close-button-svgrepo-com.svg"
+          alt="close button"
+          onClick={deleteTodo}
+        />
+      </span>
     </li>
   );
 };
