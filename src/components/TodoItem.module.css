@@ -1,8 +1,7 @@
 .todoItem {
-  padding: 1em;
+  padding: 0.5em;
   border-bottom: 3px solid rgb(72, 72, 255);
   border-radius: 10px;
-
   box-shadow: 1px 1px 10px rgb(206, 206, 206);
   font-size: 1.5rem;
   display: flex;
